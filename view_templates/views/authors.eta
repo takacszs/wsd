@@ -1,0 +1,7 @@
+<% layout("./layouts/layout.eta") %>
+<h2>Authors</h2>
+<ul>
+    <li>Mike Hebot</li>
+    <li>Kent Chanbot</li>
+    <li>Kaquhy K. Platt</li>
+</ul>

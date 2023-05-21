@@ -1,0 +1,26 @@
+<h1>Songs</h1>
+
+<form method="POST">
+  <label for="name"> name:</label>
+  <br>
+  <input type="text" id="name" name="name" />
+  <br>
+  <label for="duration"> duration:</label>  
+  <br>
+  <input type="text" id ="duration" name="duration" />
+  <br>
+  <input type="submit" value="Submit!" />
+</form>
+
+<table>
+  <tr>
+    <th>Song name</th>
+    <th>Duration (seconds)</th>
+  </tr>
+  <% it.songs.forEach((song) => { %>
+    <tr>
+      <td> <%= song.name %> </td>
+      <td> <%= song.duration %> </td>
+    <tr>
+  <% }) %>
+</table>

@@ -1,0 +1,25 @@
+{
+  "headers": {
+    "content-type": "application/javascript",
+    "x-amz-replication-status": "COMPLETED",
+    "via": "http/2 edgeproxy-h",
+    "vary": "Accept-Encoding, Origin",
+    "age": "1302711",
+    "x-cache": "Hit from cloudfront",
+    "x-amz-cf-pop": "HEL51-P2",
+    "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
+    "etag": "W/\"8ec7d8f3318368f715a19078322a9476\"",
+    "access-control-allow-origin": "*",
+    "date": "Tue, 03 Jan 2023 15:47:41 GMT",
+    "server": "deno/gcp-europe-north1",
+    "x-amz-version-id": "3.jYvX38aqUg9y5iRGxl.ptdjao_HVB7",
+    "last-modified": "Tue, 03 Jan 2023 13:10:50 GMT",
+    "cache-control": "public, max-age=31536000, immutable",
+    "x-amz-cf-id": "rBaiQPfIpjPmGfMVIR4y9QWXeiI1dLzXFZrCpDSWBCJDvNht3KfH5g=="
+  },
+  "url": "https://deno.land/x/postgresjs@v3.3.3/src/connection.js",
+  "now": {
+    "secs_since_epoch": 1674063571,
+    "nanos_since_epoch": 275189756
+  }
+}

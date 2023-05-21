@@ -1,0 +1,24 @@
+<% layout("./layouts/layout.eta") %>
+<a href="http://localhost:7777/">Main page</a>
+
+<h2>Add a shopping list</h2>
+
+<div class="form-group">
+<form method="POST" action="/lists">
+  Name: <input class="form-control" type="text" name="name" />
+  <input class="form-control btn btn-success" type="submit" value="Create list!" />
+</form>
+<div>
+
+<br>
+
+<h2>Shopping lists</h2>
+
+<ul class="list-group">
+<% it.shoppingLists.forEach((shopping_list) => { %>
+  <a class="list-group-item list-group-item-action" href="http://localhost:7777/lists/<%= shopping_list.id %>"> <%=shopping_list.name%></a>
+  <form method="POST" action="/lists/<%= shopping_list.id %>/deactivate">
+    <input data-testid="<%=shopping_list.name%>" class="form-control btn btn-danger" type="submit" value="Deactivate list!" /> 
+  </form>
+<% }); %>
+</ul>

@@ -1,0 +1,10 @@
+<h1>Some Roman emperors</h1>
+<form method="POST">
+  <input type="text" name="name" />
+  <input type="submit" />
+</form>
+<ul>
+  <% it.emperors.forEach((emperor) => { %>
+    <li><%= emperor %></li>
+  <% }); %>
+</ul>

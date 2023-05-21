@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1><a href="/">Books and authors!</a></h1>
+    <ul>
+      <li><a href="/books">Check out the books!</a></li>
+      <li><a href="/authors">Check out the authors!</a></li>
+    </ul>
+    <%~ it.body %>
+  </body>
+</html>

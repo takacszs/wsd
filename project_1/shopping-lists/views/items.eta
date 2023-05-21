@@ -1,0 +1,37 @@
+<% layout("./layouts/layout.eta") %>
+<a href="http://localhost:7777/lists">Shopping lists</a>
+
+<br>
+
+<div class="form-group">
+<form method="POST" action="/lists/<%= it.shoppingList[0].id %>/items">
+  Name: <input class="form-control" type="text" name="name" />
+  <input class="form-control btn btn-success" type="submit" value="Add item!" />
+</form>
+<div>
+
+<br>
+
+<ul class="list-group">
+  <h2><%= it.shoppingList[0].name %></h2>
+  <% it.items.forEach((item) => { %>
+    <% if (item.collected === false) { %>
+      <li class="list-group-item">
+        <%= item.name %>
+        <form method="POST" action="/lists/<%= it.shoppingList[0].id %>/items/<%= item.id %>/collect">
+          <input class="form-control btn btn-danger" type="submit" value="Mark collected!" /> 
+        </form>
+      </li>
+    <% } %>
+  <% }); %>
+
+  <% it.items.forEach((item) => { %>
+    <% if (item.collected === true) { %>
+      <li class="list-group-item">
+        <del><%= item.name %></del>
+      </form>
+      </li>
+    <% } %>
+  <% }); %>
+
+</ul>

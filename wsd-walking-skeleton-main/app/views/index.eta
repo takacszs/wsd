@@ -1,0 +1,18 @@
+<h1>Heroes</h1>
+
+<form method="POST">
+  Name: <input type="text" name="name" /><br/>
+  Actor: <input type="text" name="actor" /><br/>
+  Gender: <input type="text" name="gender" /><br/>
+  Age: <input type="text" name="age" /><br/>
+  <input type="submit" value="Submit!" />
+</form>
+
+<ul>
+<% it.heroes.forEach((hero) => { %> 
+    <li> <%= hero.name %>, <%= hero.actor %> </li>
+    <form method="POST" action="/delete/<%= hero.id %>">
+      <input type="submit" value="Delete" />
+    </form>
+<%});%>
+</ul>

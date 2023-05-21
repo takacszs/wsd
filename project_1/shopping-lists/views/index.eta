@@ -1,0 +1,8 @@
+<% layout("./layouts/layout.eta") %>
+  <h2><a href="http://localhost:7777/lists">Lists</a><h2>
+  <% if (it.numOfShoppingLists[0].count != 0) {%>
+    Shopping lists: <%= it.numOfShoppingLists[0].count %>
+    <br>
+    Shopping list items: <%= it.numOfItems[0].count %>
+  <%}else %>
+  No shopping lists yet.

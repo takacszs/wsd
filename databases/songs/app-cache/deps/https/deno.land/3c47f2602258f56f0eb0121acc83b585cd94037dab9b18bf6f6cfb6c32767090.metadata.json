@@ -1,0 +1,25 @@
+{
+  "headers": {
+    "x-cache": "Hit from cloudfront",
+    "etag": "W/\"9c0e9b3090e95fa6a05e86f22764e171\"",
+    "cache-control": "public, max-age=31536000, immutable",
+    "last-modified": "Fri, 25 Mar 2022 13:32:48 GMT",
+    "x-amz-cf-id": "tNpfqEV9fjNujk1g1rDO2PU3jNq8NEEln_O02t4FUjeCzR8MRbNqcQ==",
+    "vary": "Accept-Encoding, Origin",
+    "date": "Wed, 28 Sep 2022 21:03:50 GMT",
+    "x-amz-version-id": "DCV3NhDSRm9frwPTIS8AQ74.iecueZCd",
+    "via": "http/2 edgeproxy-h",
+    "x-amz-replication-status": "FAILED",
+    "server": "deno/gcp-europe-north1",
+    "age": "9664543",
+    "x-amz-cf-pop": "HEL51-P2",
+    "content-type": "application/javascript",
+    "access-control-allow-origin": "*",
+    "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox"
+  },
+  "url": "https://deno.land/std@0.132.0/node/_crypto/crypto_browserify/browserify_aes/encrypter.js",
+  "now": {
+    "secs_since_epoch": 1674063572,
+    "nanos_since_epoch": 202656267
+  }
+}

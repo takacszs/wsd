@@ -1,0 +1,4 @@
+<h1>Story time!</h1>
+<p>
+    Waking up, <%= it.name %> felt <%=it.emotion%>. <%= it.name %> had spent most of the previous evening with friends, and recalled that they were writing an application. <%= it.name %> had an inkling that the application had something to do with brainwaves, but simply could not recall what. The feeling, being <%= it.emotion %>, must have had something to do with the application.
+</p>

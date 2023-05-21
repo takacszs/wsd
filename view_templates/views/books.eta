@@ -1,0 +1,9 @@
+<% layout("./layouts/layout.eta") %>
+<h2>Books</h2>
+<ul>
+    <li>The Secret of the Silent Porter</li>
+    <li>Liberation of Nebula</li>
+    <li>2246: Retribution</li>
+    <li>2132: Outbreak</li>
+    <li>The Ruins of Zion</li>
+</ul>
