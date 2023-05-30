@@ -1,0 +1,33 @@
+{
+  "headers": {
+    "access-control-allow-origin": "*",
+    "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
+    "cross-origin-resource-policy": "same-origin",
+    "cross-origin-embedder-policy": "same-origin",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "age": "40797",
+    "server-timing": "attempt;val=1,cdn-cache-hit,cdn-pop;desc=\"HEL51-P2\",cdn-rid;desc=\"LXwWxC8Vqiaoawy7RS5blf5UHDVrmHL5qJCPJ4Qb8vU9hRtUXGA3uA==\",cdn-hit-layer;desc=\"EDGE\",cdn-downstream-fbl;dur=1, fetchSource;dur=36",
+    "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+    "server": "deno/gcp-europe-north1",
+    "vary": "Accept-Encoding, Origin",
+    "x-amz-replication-status": "COMPLETED",
+    "cross-origin-opener-policy": "same-origin",
+    "x-cache": "Hit from cloudfront",
+    "x-content-type-options": "nosniff",
+    "cache-control": "public, max-age=31536000, immutable",
+    "date": "Fri, 26 May 2023 21:06:23 GMT",
+    "etag": "W/\"9c0e9b3090e95fa6a05e86f22764e171\"",
+    "content-type": "application/javascript",
+    "x-frame-options": "DENY",
+    "x-amz-cf-pop": "HEL51-P2",
+    "last-modified": "Fri, 25 Mar 2022 13:32:48 GMT",
+    "x-amz-version-id": "DCV3NhDSRm9frwPTIS8AQ74.iecueZCd",
+    "x-amz-cf-id": "LXwWxC8Vqiaoawy7RS5blf5UHDVrmHL5qJCPJ4Qb8vU9hRtUXGA3uA==",
+    "via": "http/2 edgeproxy-h"
+  },
+  "url": "https://deno.land/std@0.132.0/node/_crypto/crypto_browserify/browserify_aes/encrypter.js",
+  "now": {
+    "secs_since_epoch": 1685175980,
+    "nanos_since_epoch": 510417033
+  }
+}

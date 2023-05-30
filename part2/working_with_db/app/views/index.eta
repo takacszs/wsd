@@ -1,0 +1,26 @@
+<h1>Tickets</h1>
+<form method='POST' action='/tickets'>
+  <input type='text' name='content' />
+  <input type='submit' value='Add a ticket!' />
+</form>
+<ul>
+  <% it.tickets.forEach((obj) => { %>
+  <li>
+      <% if (obj.resolved_on === null) {%>
+        <form action="/tickets/<%=obj.id%>/resolve" method="POST">
+          N <%= obj.id %>: <%= obj.content %> <input type="submit" value="Resolve"/>
+        </form>
+        <form action="/tickets/<%=obj.id%>/delete" method="POST">
+          <input type="submit" value="Delete"/>
+        </form>
+      <% } else {%>
+        <form action="/tickets/<%=obj.id%>/resolve" method="POST">
+          R <%= obj.id %>: <%= obj.content %> <input type="submit" value="Resolve"/>
+        </form>
+        <form action="/tickets/<%=obj.id%>/delete" method="POST">
+          <input type="submit" value="Delete"/>
+        </form>
+          <% }%>
+  </li>
+  <% }); %>
+</ul>

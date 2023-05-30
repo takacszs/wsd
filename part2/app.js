@@ -3,14 +3,28 @@ import { renderMiddleware } from "./middlewares/renderMiddleware.js";
 
 const app = new Application();
 const router = new Router();
+
 app.use(renderMiddleware);
 
-const viewStory = ({ render, params }) => {
-  console.log(params)
-  render("index.eta", params);
+const data = {name: "Batman", emotion:"tired"}
+
+const viewForm = ({ render }) => {
+  render("index.eta", data);
 };
 
-router.get("/name/:name/emotion/:emotion", viewStory); // params!!
+const processForm = async ({request, response, render}) =>
+{
+  const body = request.body()
+  const params = await body.value
+  if (params.get("name") != "" && params.get("emotion") != "")
+  {
+    render("index.eta", {name: params.get("name"), emotion: params.get("emotion")})
+  }
+  else render("index.eta", data)
+}
+
+router.get("/", viewForm);
+router.post("/", processForm)
 
 app.use(router.routes());
 
