@@ -20,7 +20,7 @@ const handleRequest = async (request) => {
     return new Response(await renderFile("count.eta", data), responseDetails);
   }
   
-  else if (url.pathname === "/meaning") return new Response("Seeking truths beyond meaning of life, you will find 43");
+  else if (url.pathname === "/meaning") return new Response("Seeking truths beyond meaning of life, you will find 43.");
   else return new Response("Nothing here yet.");
 };
 
