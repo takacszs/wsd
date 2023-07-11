@@ -1,3 +1,0 @@
-<% layout('./layouts/layout.eta') %>
-
-<h1>Visits: <%= it.count %></h1>
